@@ -1,0 +1,137 @@
+* {
+padding: 0;
+margin: 0;
+}
+@font-face{
+    font-family: "PathwayGothic";
+    src: url("fonts/PathwayGothic.ttf") format("truetype");
+}
+html{
+    font-size: 18px;
+    font-family: "PathwayGothic";
+}
+
+body{
+    background: linear-gradient(#444e4b,#151f1c);
+    display: flex;
+    flex-direction: column;
+}
+ul{
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+}
+header{
+    padding: 1.5rem 0;
+}
+header>ul{
+    display: flex;
+    width: 100%;
+}
+header li:first-child{
+    margin-right: auto;
+}
+header li:not(:first-child){
+    margin-left: 1rem;
+}
+header li:nth-child(3),header li:nth-child(4){
+    position: relative;
+}
+header li:nth-child(3)::before,header li:nth-child(4)::before{
+    content: "";
+    display: block;
+    height: 75%;
+    top: 15%;
+    position: absolute;
+    left: -0.5rem;
+    width:1px;
+    background-color: white;
+}
+header a{
+    color: white;
+}
+main{
+    background-color:#c9cec5;
+    padding: 5rem 3rem;
+    
+}
+.wrapper{
+    max-width: 1600px;
+    margin: auto;
+    width: 95vw;
+}
+nav ul {
+    display: flex;
+    width: 100%;
+}
+nav li {
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+nav li:first-child{
+    margin-right: auto;
+} 
+nav li:not(:first-child){
+    margin-left: 2%;
+    width: 20%;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.4) inset;
+    
+    
+}
+nav li a{
+    color: black;
+    letter-spacing: .3rem;
+}
+main>img{
+    width: 100%;
+    margin-top: 3rem;
+}
+.info ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.info h2{
+    font-size: 2.5rem;
+    
+}
+.info li{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.info li img{
+    width: 100%;
+    
+}
+.info li p{
+    font-size: 1.2rem;
+    line-height: 160%;
+    font-family: serif;
+}
+.info li a{
+    width: 60%;
+    display: block;
+    margin: auto;
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 1rem 0;
+    color: grey;
+    box-shadow: 0px 0px 5px 2px grey inset;
+    margin-top: 0.5rem;
+    letter-spacing: .25rem;
+}
+footer {
+    padding: 1.5rem 0 3rem 0;
+}
+footer p, footer a {
+    color: white;
+    
+}
